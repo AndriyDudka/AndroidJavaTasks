@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/buttonSecondNumber"
+        android:text="Second number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/textViewSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/buttonSecondNumber"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:text="second number"/>
+
+    <Button
+        android:id="@+id/buttonFirstNumber"
+        android:text="First number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/buttonSecondNumber"
+        android:layout_alignStart="@+id/buttonSecondNumber"
+        android:layout_toStartOf="@+id/textViewSecondNumber" />
+
+    <TextView
+        android:id="@+id/textViewFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/buttonFirstNumber"
+        android:layout_toEndOf="@+id/buttonSecondNumber" />
+
+    <Button
+        android:id="@+id/buttonResult"
+        android:text="Calculate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonSecondNumber"
+        android:layout_alignStart="@+id/buttonSecondNumber" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:layout_alignBaseline="@+id/buttonResult"
+        android:layout_alignBottom="@+id/buttonResult"
+        android:layout_alignStart="@+id/textViewSecondNumber" />
+    <ImageButton
+        android:id="@+id/buttonSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_sms"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+    <ImageButton
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_call"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/buttonSms"/>
+    <ImageButton
+        android:id="@+id/buttonGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_google"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/buttonCall"/>
+</RelativeLayout>
