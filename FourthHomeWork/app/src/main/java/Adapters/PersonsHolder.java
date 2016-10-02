@@ -39,7 +39,7 @@ public class PersonsHolder extends RecyclerView.ViewHolder {
         name.setText(person.getName());
         phone.setText(person.getPhone());
         if (person.getImage() == null){
-            image.setImageResource(R.drawable.ic_defoultcontact);
+            image.setImageResource(R.drawable.ic_contact);
         } else{
             image.setImageURI(Uri.parse(person.getImage()));
         }
